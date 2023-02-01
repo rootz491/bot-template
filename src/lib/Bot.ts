@@ -7,6 +7,7 @@ import config from '../configs/config';
 
 export default class Bot {
   public commands = new Collection<string, any>();
+  public config = config;
   private commandsArray: any[] = [];
 
   constructor(public readonly client: Client) {
